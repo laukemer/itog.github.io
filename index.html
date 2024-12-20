@@ -7,65 +7,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="block3">
-        <nav class="block4">
+    <header class="header">
+        <nav class="nav">
             <a href="#welcome">Главная</a>
-            <a href="#onas">О нас</a>
-            <a href="#possibilities">Возможности</a>
-            <a href="#priziv">Присоединиться</a>
+            <a href="#about">О нас</a>
+            <a href="#features">Возможности</a>
+            <a href="#join">Присоединиться</a>
+            <a href="#chat">Чат</a>
         </nav>
     </header>
 
-    <div id="welcome" class="block1 block5">
-        <h1>Добро пожаловать на платформу разработчиков</h1>
-        <p>Ваше лучшее решение для программирования, сотрудничества и роста.</p>
-    </div>
-
-    <div id="onas" class="block1 block6">
-        <h2>О нас</h2>
-        <p>Мы предоставляем инструменты, обучающие материалы и активное сообщество для помощи разработчикам.</p>
-    </div>
-
-    <div id="possibilities" class="block1 block7">
-        <div class="block8">
-            <h3>Сотрудничество</h3>
-            <p>Работайте над проектами с разработчиками по всему миру.</p>
+    <section id="welcome" class="section welcome">
+        <div class="container">
+            <h1>Добро пожаловать на платформу разработчиков</h1>
+            <p>Ваше лучшее решение для программирования, сотрудничества и роста.</p>
+            <button class="cta-button">Узнать больше</button>
         </div>
-        <div class="block8">
-            <h3>Ресурсы</h3>
-            <p>Получите доступ к нашей обширной библиотеке учебных материалов и руководств.</p>
-        </div>
-        <div class="block8">
-            <h3>Нетворкинг</h3>
-            <p>Связывайтесь с профессионалами, чтобы развивать свою карьеру.</p>
-        </div>
-    </div>
+    </section>
 
-    <div id="priziv" class="block1 block9">
-        <h2>Присоединяйтесь к нам</h2>
-        <p>Начните свой путь к становлению лучшим разработчиком.</p>
-        <button>Зарегистрироваться</button>
-    </div>
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы предоставляем инструменты, обучающие материалы и активное сообщество для помощи разработчикам.</p>
+            <button class="cta-button">Связаться с нами</button>
+        </div>
+    </section>
 
-    <div id="chat" class="block1 block11">
-        <h2>Чат программистов</h2>
-        <p>Обсуждайте проекты, делитесь идеями и находите решения вместе с сообществом.</p>
-        <div class="chat-window">
-            <div class="chat-message">
-                <strong>Пользователь 1:</strong> Привет, кто-нибудь знает, как работать с API?
-            </div>
-            <div class="chat-message">
-                <strong>Пользователь 2:</strong> Да, могу помочь! Какая конкретно проблема?
-            </div>
-            <div class="chat-message">
-                <strong>Пользователь 3:</strong> Ребята, у кого есть опыт с GraphQL?
+    <section id="features" class="section features">
+        <div class="container">
+            <h2>Возможности</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Сотрудничество</h3>
+                    <p>Работайте над проектами с разработчиками по всему миру.</p>
+                    <button class="cta-button">Попробовать</button>
+                </div>
+                <div class="feature-item">
+                    <h3>Ресурсы</h3>
+                    <p>Получите доступ к нашей обширной библиотеке учебных материалов и руководств.</p>
+                    <button class="cta-button">Изучить</button>
+                </div>
+                <div class="feature-item">
+                    <h3>Нетворкинг</h3>
+                    <p>Связывайтесь с профессионалами, чтобы развивать свою карьеру.</p>
+                    <button class="cta-button">Присоединиться</button>
+                </div>
             </div>
         </div>
-        <button>Войти в чат</button>
-    </div>
+    </section>
 
-    <footer class="block10">
-        <p>&copy; 2024 Платформа для разработчиков. Все права защищены.</p>
+    <section id="join" class="section join">
+        <div class="container">
+            <h2>Присоединяйтесь к нам</h2>
+            <p>Начните свой путь к становлению лучшим разработчиком.</p>
+            <button class="cta-button">Зарегистрироваться</button>
+        </div>
+    </section>
+
+    <section id="chat" class="section chat">
+        <div class="container">
+            <h2>Чат программистов</h2>
+            <p>Обсуждайте проекты, делитесь идеями и находите решения вместе с сообществом.</p>
+            <div class="chat-window">
+                <div class="chat-message">
+                    <strong>Пользователь 1:</strong> Привет, кто-нибудь знает, как работать с API?
+                </div>
+                <div class="chat-message">
+                    <strong>Пользователь 2:</strong> Да, могу помочь! Какая конкретно проблема?
+                </div>
+                <div class="chat-message">
+                    <strong>Пользователь 3:</strong> Ребята, у кого есть опыт с GraphQL?
+                </div>
+            </div>
+            <button class="cta-button">Войти в чат</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Платформа для разработчиков. Все права защищены.</p>
+            <button class="cta-button">Связаться с нами</button>
+        </div>
     </footer>
 </body>
 </html>
