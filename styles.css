@@ -11,23 +11,13 @@ body {
     line-height: 1.5;
 }
 
-.block1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    min-height: 100vh;
-}
-
-.block2 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+.container {
+    width: 80%;
+    margin: 0 auto;
     padding: 2rem;
 }
 
-.block3 {
+.header {
     background: #161b22;
     padding: 1rem 0;
     position: sticky;
@@ -36,12 +26,12 @@ body {
     border-bottom: 1px solid #21262d;
 }
 
-.block4 {
+.nav {
     display: flex;
     justify-content: space-around;
 }
 
-.block4 a {
+.nav a {
     color: #c9d1d9;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -49,30 +39,38 @@ body {
     transition: background-color 0.3s;
 }
 
-.block4 a:hover {
+.nav a:hover {
     background: #21262d;
 }
 
-.block5 {
+.section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.welcome {
     background: #0d1117;
     border-bottom: 1px solid #21262d;
     animation: fadeIn 2s;
 }
 
-.block6 {
+.about {
     background: #161b22;
     border-bottom: 1px solid #21262d;
 }
 
-.block7 {
+.features {
     background: #0d1117;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     border-bottom: 1px solid #21262d;
 }
 
-.block8 {
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature-item {
     background: #161b22;
     padding: 1rem;
     margin: 1rem;
@@ -83,20 +81,19 @@ body {
     border: 1px solid #21262d;
 }
 
-.block8:hover {
+.feature-item:hover {
     transform: scale(1.05);
     background: #21262d;
 }
 
-.block9 {
+.join {
     background: #161b22;
     padding: 3rem 2rem;
-    text-align: center;
     animation: slideIn 2s;
     border-top: 1px solid #21262d;
 }
 
-.block9 button {
+.join button {
     padding: 0.75rem 2rem;
     background: #238636;
     color: #ffffff;
@@ -107,21 +104,13 @@ body {
     font-size: 1rem;
 }
 
-.block9 button:hover {
+.join button:hover {
     background: #2ea043;
 }
 
-.block10 {
+.chat {
     background: #0d1117;
-    padding: 1rem 0;
-    text-align: center;
-    border-top: 1px solid #21262d;
-}
-
-.block11 {
-    background: #161b22;
     padding: 3rem 2rem;
-    text-align: center;
     animation: slideIn 2s;
     border-top: 1px solid #21262d;
 }
@@ -137,6 +126,29 @@ body {
 
 .chat-message {
     margin-bottom: 1rem;
+}
+
+.footer {
+    background: #0d1117;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #21262d;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem;
+    background: #238636;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background: #2ea043;
 }
 
 @keyframes fadeIn {
