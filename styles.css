@@ -44,7 +44,7 @@ body {
 }
 
 .section {
-    height: 100vh; 
+    height: 100vh; /* Высота каждой секции равна высоте окна просмотра */
     padding: 2rem 0;
     text-align: center;
     display: flex;
